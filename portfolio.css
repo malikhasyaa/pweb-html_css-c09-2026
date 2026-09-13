@@ -17,16 +17,30 @@ body {
 
 .section-header {
     text-align: center;
-    margin: 50px 0;
+    margin: 70px 0 40px;
+    padding: 40px 30px;
+
+    background: #151515;
+    border: 1px solid #333;
+    border-radius: 4px;
 }
 
 .section-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+    margin-bottom: 14px;
 }
 
 .section-header p {
-    color: #666;
+    max-width: 550px;
+    margin: 0 auto;
+
+    color: #777;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .portfolio-grid {
@@ -55,7 +69,8 @@ body {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
+	text-align: center;
     left: 0;
     bottom: 0;
     width: 100%;
