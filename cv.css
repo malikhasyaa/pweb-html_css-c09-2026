@@ -28,7 +28,6 @@ h1, h2, h3, h4 {
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-/* ===== Navigasi Antar Halaman (Flexbox) ===== */
 .page-nav {
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@ h1, h2, h3, h4 {
     border-color: #ffffff;
 }
 
-/* ===== Hero / Profil ===== */
+
 .hero {
     display: flex;
     align-items: center;
@@ -146,7 +145,6 @@ h1, h2, h3, h4 {
     color: #777;
 }
 
-/* ===== Section Header (dipakai di halaman Timeline/Education/Aspirasi) ===== */
 .section-header {
     text-align: center;
     margin-bottom: 40px;
@@ -167,7 +165,6 @@ h1, h2, h3, h4 {
     line-height: 1.6;
 }
 
-/* ===== Timeline (Position) ===== */
 .cv-timeline {
     position: relative;
     padding-left: 24px;
@@ -227,7 +224,6 @@ h1, h2, h3, h4 {
     color: #777;
 }
 
-/* ===== Form Aspirasi (Flexbox) ===== */
 .aspiration-form {
     display: flex;
     flex-direction: column;
@@ -285,10 +281,13 @@ h1, h2, h3, h4 {
     background-color: #cccccc;
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 992px) {
     .section-header h1 {
         font-size: 2.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
     }
 }
 
@@ -307,6 +306,11 @@ h1, h2, h3, h4 {
         height: 280px;
     }
 
+    .hero-badge {
+        right: 10px;
+        bottom: -16px;
+    }
+
     .page-nav {
         gap: 16px;
         flex-wrap: wrap;
@@ -318,5 +322,85 @@ h1, h2, h3, h4 {
 
     .section-header p {
         font-size: 0.9rem;
+    }
+
+    .cv-item {
+        padding: 14px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 94%;
+    }
+
+    .page-nav {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .page-nav a {
+        font-size: 0.78rem;
+    }
+
+    .hero {
+        padding: 24px 0 40px;
+        gap: 24px;
+    }
+
+    .hero-photo-wrap {
+        width: 180px;
+    }
+
+    .hero-photo-wrap img {
+        height: 210px;
+        border-radius: 60px 0 12px 12px;
+    }
+
+    .hero-badge {
+        padding: 12px 14px;
+        min-width: 90px;
+        right: 0;
+        bottom: -14px;
+    }
+
+    .hero-badge h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-badge p {
+        font-size: 0.65rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-quote {
+        font-size: 0.95rem;
+    }
+
+    .section-header {
+        padding: 24px 16px;
+    }
+
+    .section-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .cv-timeline {
+        padding-left: 18px;
+    }
+
+    .cv-item {
+        padding: 12px;
+    }
+
+    .cv-item::before {
+        left: -18px;
+    }
+
+    .aspiration-form {
+        padding: 20px;
     }
 }
